@@ -60,44 +60,10 @@ const router = createRouter({
       component: () => import('../views/CreateSuccessView.vue')
     },
     {
-      path: '/chatroom',
-      name: 'chatroom',
+      path: '/Topic',
+      name: 'Topic',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ChatRoom.vue')
-    },
-    {
-      path: '/friendlist',
-      name: 'friendlist',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/FriendList.vue')
-    },
-    {
-      path: '/topic/create',
-      name: 'topic-create',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AddTopic.vue')
-    },
-    {
-      path: '/forum',
-      name: 'forum',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/Forum.vue')
-    },
-
-    //Viewing a Single Topic
-    {
-      path: '/topic/:id',
-      name: 'view-topic',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/TopicView.vue')
     },

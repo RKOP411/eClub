@@ -12,7 +12,7 @@ onMounted(() => {
 
   if (token.value != null) {
     router.push({
-        name: "forum",
+        name: "Topic",
         query: {
             token: token.value
         }

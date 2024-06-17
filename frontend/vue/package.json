@@ -11,6 +11,10 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@oruga-ui/oruga-next": "^0.8.11",
+    "@oruga-ui/theme-bootstrap": "^0.5.5",
+    "bottom-navigation-vue": "^3.3.5",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
@@ -21,6 +25,6 @@
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
     "prettier": "^3.2.5",
-    "vite": "^5.2.8"
+    "vite": "^5.2.13"
   }
 }
