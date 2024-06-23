@@ -52,7 +52,6 @@ onMounted(() => {
   border-radius: 25px;
   text-align: center;
   padding-top: 110px;
-  margin-left: -5vw;
 }
 .btn-lg{
   font-size: 3vh;

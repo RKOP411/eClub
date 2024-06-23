@@ -15,7 +15,7 @@
     "@oruga-ui/oruga-next": "^0.8.11",
     "@oruga-ui/theme-bootstrap": "^0.5.5",
     "bottom-navigation-vue": "^3.3.5",
-    "vue": "^3.4.21",
+    "vue": "file:",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
