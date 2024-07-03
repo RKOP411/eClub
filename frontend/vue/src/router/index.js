@@ -67,6 +67,30 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/TopicView.vue')
     },
+    {
+      path: '/Setting',
+      name: 'Setting',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/SettingView.vue')
+    },
+    {
+      path: '/FriendList',
+      name: 'FriendList',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/FriendListView.vue')
+    },
+    {
+      path: '/PrivateMessage',
+      name: 'PrivateMessage',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/PMView.vue')
+    },
 
   ]
 })

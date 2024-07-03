@@ -1,8 +1,27 @@
-<script setup></script>
+<script>
+import { SwipeBottomNavigation } from "bottom-navigation-vue";
+import "bottom-navigation-vue/dist/style.css";
+export default {
+  components: { SwipeBottomNavigation },
+  data: () => ({
+    selected: 1,
+    options: [
+      { id: 1, icon: "fa-solid fa-house", title: "首頁" },
+      { id: 2, icon: "fas fa-comments", title: "私訊" },
+      { id: 3, icon: "fas fa-bell", title: "好友列表" },
+      { id: 4, icon: "fa-solid fa-gear", title: "設定" },
+    ],
+  }),
+};
+</script>
 
 <template>
   <header>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></header>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </header>
   <main>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -15,7 +34,9 @@
       <!-- Breadcrumb -->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="Topic" style="font-size: 1.5rem;">首頁</a></li>
+          <li class="breadcrumb-item">
+            <a href="Topic" style="font-size: 1.5rem">首頁</a>
+          </li>
           <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
         </ol>
       </nav>
@@ -33,20 +54,13 @@
       </div>
 
       <!-- End Card -->
-
-      <nav aria-label="Page navigation">
-        <ul class="pagination pagination-lg justify-content-center">
-          <li class="page-item disabled">
-            <a class="page-link">上一頁</a>
-          </li>
-          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#">下一頁</a>
-          </li>
-        </ul>
-      </nav>
+      <SwipeBottomNavigation
+        :options="options"
+        v-model="selected"
+        swiper-color="#FFFFFF"
+        background-color="#C2D5F5"
+        icon-color="#000000"
+      />
     </div>
   </main>
 </template>
