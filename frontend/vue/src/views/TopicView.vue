@@ -29,6 +29,11 @@ export default {
           <img src="/src/img/thumb.png" width="80rem" height="80rem" />
         </a>
       </div>
+      <div style="">
+      <button type="button" class="btn btn-outline-primary btn-lg" style="margin-right: 2rem; width: 6rem;">
+        登出
+      </button>
+      </div>
     </nav>
     <div class="container">
       <!-- Breadcrumb -->
@@ -73,9 +78,9 @@ export default {
   width: 100%;
 }
 .card-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .card-text {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 </style>
