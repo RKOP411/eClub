@@ -15,23 +15,22 @@ export default {
 };
 </script>
 
-
 <template>
-    <head>
-      <title>好友列表</title>
-    </head>
-    <main>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-light">
+  <head>
+    <title>好友列表</title>
+  </head>
+  <main>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
         <div class="row">
-        <div class="col-12">
-          <a class="navbar-brand" href="#">
-            <img src="/src/img/thumb.png" width="80rem" height="80rem" />
-          </a>
+          <div class="col-12">
+            <a class="navbar-brand" href="#">
+              <img src="/src/img/thumb.png" width="80rem" height="80rem" />
+            </a>
+          </div>
         </div>
-      </div>
-        <div class="col-20 ">
+        <div class="col-20">
           <button
             type="button"
             class="btn btn-outline-primary btn-lg"
@@ -43,20 +42,18 @@ export default {
       </div>
     </nav>
     <!-- End Navbar -->
-  
-        <div class="container"></div>
-  
-    </main>
-    <SwipeBottomNavigation
-        :options="options"
-        v-model="selected"
-        swiper-color="#FFFFFF"
-        background-color="#C2D5F5"
-        icon-color="#000000"
-      />
-  </template>
-  
-  <script></script>
-  
-  <style scoped></style>
-  
+
+    <div class="container"></div>
+  </main>
+  <SwipeBottomNavigation
+    :options="options"
+    v-model="selected"
+    swiper-color="#FFFFFF"
+    background-color="#C2D5F5"
+    icon-color="#000000"
+  />
+</template>
+
+<script></script>
+
+<style scoped></style>
