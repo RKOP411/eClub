@@ -17,30 +17,41 @@ export default {
 
 <template>
   <header>
+    <title>首頁</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </header>
   <main>
+  <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="/src/img/thumb.png" width="80rem" height="80rem" />
-        </a>
+      <div class="container">
+        <div class="row">
+        <div class="col-12">
+          <a class="navbar-brand" href="#">
+            <img src="/src/img/thumb.png" width="80rem" height="80rem" />
+          </a>
+        </div>
       </div>
-      <div style="">
-      <button type="button" class="btn btn-outline-primary btn-lg" style="margin-right: 2rem; width: 6rem;">
-        登出
-      </button>
+        <div class="col-20 ">
+          <button
+            type="button"
+            class="btn btn-outline-primary btn-lg"
+            style="margin-right: 2rem; width: 6rem"
+          >
+            登出
+          </button>
+        </div>
       </div>
     </nav>
+    <!-- End Navbar -->
     <div class="container">
       <!-- Breadcrumb -->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="Topic" style="font-size: 1.5rem">首頁</a>
+       
           </li>
           <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
         </ol>
