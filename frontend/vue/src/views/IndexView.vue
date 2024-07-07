@@ -15,7 +15,7 @@ onMounted(() => {
   </header>
   <main>
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row justify-content-center">
         <div class="col-6">
           <div class="card">
               <a
