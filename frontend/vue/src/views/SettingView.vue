@@ -69,39 +69,54 @@ export default {
           href="#"
           class="list-group-item d-flex justify-content-between align-items-start"
         >
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">姓名</div>
-            湯姆·里德爾
+          <div class="col-1 icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="col-12">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">姓名</div>
+              湯姆·里德爾
+            </div>
           </div>
         </a>
         <a
           href="#"
           class="list-group-item d-flex justify-content-between align-items-start"
         >
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">電話號碼</div>
-            5484-1234
+          <div class="col-1 icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="col-12">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">電話號碼</div>
+              5484-1234
+            </div>
           </div>
         </a>
         <a
           href="#"
           class="list-group-item d-flex justify-content-between align-items-start"
         >
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">關於我</div>
-            Content of me
+          <div class="col-1 icon">
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <div class="col-12">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">關於我</div>
+              Content of me
+            </div>
           </div>
         </a>
       </div>
     </div>
   </main>
   <SwipeBottomNavigation
-        :options="options"
-        v-model="selected"
-        swiper-color="#FFFFFF"
-        background-color="#C2D5F5"
-        icon-color="#000000"
-      />
+    :options="options"
+    v-model="selected"
+    swiper-color="#FFFFFF"
+    background-color="#C2D5F5"
+    icon-color="#000000"
+  />
 </template>
 
 <script></script>
@@ -110,10 +125,12 @@ export default {
 .list-group {
   font-size: 2rem;
 }
-.ms-2{
- margin: 10px;
-}
-.fw-bold{
+.ms-2 {
+  margin: 10px;
   text-align: left;
+}
+.icon {
+  margin-top: 40px;
+  font-size: 50px;
 }
 </style>
