@@ -6,10 +6,10 @@ export default {
   data: () => ({
     selected: 1,
     options: [
-      { id: 1, icon: "fa-solid fa-house", title: "首頁" },
-      { id: 2, icon: "fas fa-comments", title: "私訊" },
-      { id: 3, icon: "fas fa-bell", title: "好友列表" },
-      { id: 4, icon: "fa-solid fa-gear", title: "設定" },
+      { id: 1, icon: "fa-solid fa-house", title: "首頁", path: "/Topic" },
+      { id: 2, icon: "fas fa-comments", title: "私訊", path: "/PrivateMessage" },
+      { id: 3, icon: "fas fa-bell", title: "好友列表", path: "/FriendList" },
+      { id: 4, icon: "fa-solid fa-gear", title: "設定", path: "/Setting" },
     ],
   }),
 };
@@ -17,6 +17,10 @@ export default {
 
 <template>
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <title>好友列表</title>
   </head>
   <main>
