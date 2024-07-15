@@ -47,7 +47,24 @@ export default {
     </nav>
     <!-- End Navbar -->
 
-    <div class="container"></div>
+    <div class="container">
+      <div class="list-group">
+        <a
+          href="#"
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="col-1 icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="col-12">
+            <div class="ms-2 me-auto FriendList_TxT">
+              <div class="fw-bold">湯姆</div>
+              Text
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
   </main>
   <SwipeBottomNavigation
     :options="options"
@@ -58,6 +75,16 @@ export default {
   />
 </template>
 
-<script></script>
 
-<style scoped></style>
+<style scoped>
+.icon {
+  margin-top: 20px;
+  font-size: 4rem;
+}
+.FriendList_TxT{
+  margin-top: 20px;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+
+}
+</style>

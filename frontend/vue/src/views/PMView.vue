@@ -47,6 +47,44 @@ export default {
     </nav>
     <!-- End Navbar -->
 
+    <nav class="navbar navbar-expand-lg top-nav">
+      <a class="navbar-brand" href="#"
+        ><i class="fa-solid fa-arrow-right fa-rotate-180"></i
+      ></a>
+      <div class="container">
+        <div class="fw-bold PM_info">
+          <img src="/src/img/Head_Icon.png" class="Head_Icon" />
+          <b class="PM_Name">湯姆</b>
+        </div>
+        <!-- Dropdown -->
+        <div class="dropstart">
+          <a
+            class="dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-ellipsis-vertical"></i
+          ></a>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">背景顏色</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">搜尋</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">刪除好友</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">封鎖</a>
+            </li>
+          </ul>
+        </div>
+        <!-- End Dropdown -->
+      </div>
+    </nav>
+
     <div class="container"></div>
   </main>
   <SwipeBottomNavigation
@@ -58,6 +96,23 @@ export default {
   />
 </template>
 
-<script></script>
-
-<style scoped></style>
+<style scoped>
+.top-nav {
+  background-color: #c2d5f5 !important;
+  padding-left: 2rem;
+}
+.Head_Icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+.PM_info {
+  text-align: left;
+}
+.PM_Name {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 1rem;
+}
+</style>
