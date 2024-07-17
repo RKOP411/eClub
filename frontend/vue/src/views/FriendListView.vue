@@ -53,13 +53,13 @@ export default {
           href="#"
           class="list-group-item d-flex justify-content-between align-items-start"
         >
-          <div class="col-1 icon">
-            <i class="fa-solid fa-user"></i>
+          <div class="col-1">
+            <img src="/src/img/Head_Icon.png" class="Head_Icon" />
           </div>
           <div class="col-12">
             <div class="ms-2 me-auto FriendList_TxT">
-              <div class="fw-bold">湯姆</div>
-              Text
+              <div class="fw-bold">湯姆 <span class="time">2:09 PM </span></div>
+              <span class="Text">Text</span>
             </div>
           </div>
         </a>
@@ -69,22 +69,34 @@ export default {
   <SwipeBottomNavigation
     :options="options"
     v-model="selected"
-    swiper-color="#FFFFFF"
-    background-color="#C2D5F5"
+    swiper-color="var(--white)"
+    background-color="var(--blue)"
     icon-color="#000000"
   />
 </template>
 
-
 <style scoped>
-.icon {
-  margin-top: 20px;
-  font-size: 4rem;
-}
-.FriendList_TxT{
+.FriendList_TxT {
   margin-top: 20px;
   padding-left: 2rem;
   font-size: 1.5rem;
+}
 
+.time {
+  position: absolute;
+  right: 10%;
+  padding: 0 0 5px 5px;
+  background-color: var(--white);
+}
+.Head_Icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: #ffffff;
+  margin-top: 25px;
+}
+.Text {
+  color: var(--grey);
+  font-size: 1.2rem;
 }
 </style>

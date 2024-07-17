@@ -168,8 +168,8 @@ export default {
         <SwipeBottomNavigation
           :options="options"
           v-model="selected"
-          swiper-color="#FFFFFF"
-          background-color="#C2D5F5"
+          swiper-color="var(--white)"
+          background-color="var(--blue)"
           icon-color="#000000"
         />
       </div>

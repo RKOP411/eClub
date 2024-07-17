@@ -48,7 +48,7 @@ export default {
     <!-- End Navbar -->
 
     <nav class="navbar navbar-expand-lg top-nav">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" href="/FriendList"
         ><i class="fa-solid fa-arrow-right fa-rotate-180"></i
       ></a>
       <div class="container">
@@ -58,11 +58,7 @@ export default {
         </div>
         <!-- Dropdown -->
         <div class="dropstart">
-          <a
-            class="dropdown-toggle"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-ellipsis-vertical"></i
           ></a>
 
@@ -85,20 +81,26 @@ export default {
       </div>
     </nav>
 
-    <div class="container"></div>
+    <div class="container">
+      <div class="conversation-start">
+        <div class="conversation-time">Yesterday, 4:20 PM</div>
+        <div class="PM_bubble You">Hey you</div>
+        <div class="PM_bubble Me">?</div>
+      </div>
+    </div>
   </main>
   <SwipeBottomNavigation
     :options="options"
     v-model="selected"
-    swiper-color="#FFFFFF"
-    background-color="#C2D5F5"
+    swiper-color="var(--white)"
+    background-color="var(--blue)"
     icon-color="#000000"
   />
 </template>
 
 <style scoped>
 .top-nav {
-  background-color: #c2d5f5 !important;
+  background-color: var(--blue) !important;
   padding-left: 2rem;
 }
 .Head_Icon {
@@ -115,4 +117,54 @@ export default {
   text-align: left;
   margin-left: 1rem;
 }
+
+.conversation-start {
+  margin-top: 50px;
+}
+.conversation-time {
+  text-align: center;
+  margin: 30px;
+  color: var(--grey);
+}
+.PM_bubble {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  max-width: 30%;
+  word-wrap: break-word;
+  
+}
+
+.PM_bubble.You {
+  background-color: var(--PM_You);
+  float: left;
+  align-self: flex-start;
+}
+
+.PM_bubble.You::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  border: 10px solid;
+  border-color:  transparent transparent  var(--PM_You);
+}
+
+.PM_bubble.Me {
+  background-color: var(--PM_Me);
+  float: right;
+  align-self: flex-end;
+  
+}
+
+.PM_bubble.Me::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  border: 10px solid;
+  border-color:  transparent transparent  var(--PM_Me);
+}
+
 </style>

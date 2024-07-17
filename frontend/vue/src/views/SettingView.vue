@@ -69,7 +69,7 @@ export default {
           href="#"
           class="list-group-item d-flex justify-content-between align-items-start"
         >
-          <div class="col-1 icon">
+          <div class="col-1">
             <i class="fa-solid fa-user"></i>
           </div>
           <div class="col-12">
@@ -107,14 +107,16 @@ export default {
             </div>
           </div>
         </a>
+        
       </div>
     </div>
   </main>
+
   <SwipeBottomNavigation
     :options="options"
     v-model="selected"
-    swiper-color="#FFFFFF"
-    background-color="#C2D5F5"
+    swiper-color="var(--white)"
+    background-color="var(--blue)"
     icon-color="#000000"
   />
 </template>
@@ -133,4 +135,5 @@ export default {
   margin-top: 40px;
   font-size: 50px;
 }
+
 </style>
