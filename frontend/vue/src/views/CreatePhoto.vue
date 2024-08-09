@@ -82,7 +82,7 @@ const submit = async function (e) {
     // convert the response to json
     const json = await response.json();
     console.log(json);
-    router.push("forum");
+    router.push("/Topic");
   }
 };
 
