@@ -14,6 +14,9 @@ onMounted(() => {
     <css />
   </header>
   <main>
+      <!-- Navbar -->
+
+    <!-- End Navbar -->
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-6">

@@ -120,6 +120,7 @@ export default {
 
 .conversation-start {
   margin-top: 50px;
+
 }
 .conversation-time {
   text-align: center;
@@ -133,38 +134,38 @@ export default {
   margin-bottom: 5px;
   max-width: 30%;
   word-wrap: break-word;
-  
+  clear: both;
 }
 
 .PM_bubble.You {
   background-color: var(--PM_You);
   float: left;
   align-self: flex-start;
+  display: block;
 }
 
 .PM_bubble.You::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -10px;
   top: 10px;
   border: 10px solid;
-  border-color:  transparent transparent  var(--PM_You);
+  border-color: transparent transparent var(--PM_You);
 }
 
 .PM_bubble.Me {
   background-color: var(--PM_Me);
   float: right;
   align-self: flex-end;
-  
+  display: block;
 }
 
 .PM_bubble.Me::after {
-  content: '';
+  content: "";
   position: absolute;
   right: -10px;
   top: 10px;
   border: 10px solid;
-  border-color:  transparent transparent  var(--PM_Me);
+  border-color: transparent transparent var(--PM_Me);
 }
-
 </style>
